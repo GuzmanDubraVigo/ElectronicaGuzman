@@ -26,7 +26,7 @@ function closeMenu() {
     navbarToggler.setAttribute('aria-expanded', 'false');
 
     // Restaura el padding-top del body
-    document.body.style.paddingTop = '80px';
+    document.body.style.paddingTop = '50px';
 }
 
 // Ajustar el padding-top del body cuando el menú se expande o contrae
@@ -42,7 +42,7 @@ navbarToggler.addEventListener('click', () => {
         body.style.paddingTop = `${navbarHeight + collapseHeight}px`;
     } else {
         // Si el menú está cerrado, restaura el padding-top inicial
-        body.style.paddingTop = '80px';
+        body.style.paddingTop = '50px';
     }
 });
 
@@ -50,6 +50,6 @@ navbarToggler.addEventListener('click', () => {
 window.addEventListener('resize', () => {
     if (window.innerWidth >= 992) {
         // En pantallas grandes, restaura el padding-top inicial
-        body.style.paddingTop = '80px';
+        body.style.paddingTop = '50px';
     }
 });
