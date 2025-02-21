@@ -1,0 +1,172 @@
+body {
+  padding-top: 80px; /* Ajusta este valor según sea necesario */
+  background-image: url('imagenes/FONDO.jpg');
+  background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen para que no se desplace con el scroll */
+}
+
+.extra-info {
+  display: none; /* Oculto por defecto */
+}
+
+.extra-info.visible {
+  display: block; /* Visible cuando tiene la clase "visible" */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.custom-border-text {
+  -webkit-text-stroke: 1px rgb(62, 61, 138);
+  font-size: 48px; /* Tamaño de texto aumentado */
+}
+
+
+/* Estilo para la sección de inicio */
+#inicio {
+  background-image: url('imagenes/ELECTRONICA AUTOMOTRIZ.jpg'); /* Imagen de fondo */
+  background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  color: white; /* Color del texto en blanco */
+  position: relative; /* Necesario para el overlay */
+  padding: 100px 0; /* Ajusta el padding según sea necesario */
+}
+
+/* Overlay semitransparente para mejorar la legibilidad del texto */
+#inicio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+  z-index: 1; /* Coloca el overlay detrás del contenido */
+}
+
+/* Estilo para el contenido de la sección de inicio */
+#inicio .container {
+  position: relative; /* Asegura que el contenido esté sobre el overlay */
+  z-index: 2; /* Coloca el contenido sobre el overlay */
+}
+
+/* Estilo base para todas las tarjetas */
+.card {
+  background-size: cover; /* Ajusta la imagen para cubrir la tarjeta */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  color: #ffffff; /* Color del texto claro para contrastar con el fondo oscuro */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+  position: relative; /* Necesario para posicionar el fondo */
+  overflow: hidden; /* Evita que el fondo se desborde */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para el título y el texto */
+.card .card-title {
+  font-size: 1.5rem; /* Tamaño del título */
+  margin-bottom: 10px; /* Espaciado inferior */
+  padding: 5px; /* Espaciado interno */
+  color: #ffffff; /* Color del título */
+}
+
+.card .card-text {
+  font-size: 1rem; /* Tamaño del texto */
+  color: #d8d6d6; /* Color del texto */
+}
+
+/* Estilo para el botón */
+.card .btn {
+  margin-top: 10px; /* Espaciado superior */
+  background-color: #007bff; /* Color de fondo del botón */
+  border: none; /* Sin borde */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+  color: white; /* Color del texto del botón */
+}
+
+/* Estilos específicos para cada tarjeta */
+
+/* Chip Tuning */
+.chip-tuning-card {
+  background-image: linear-gradient(
+      rgba(8, 8, 8, 0.8), /* Fondo negro semitransparente */
+      rgba(8, 8, 8, 0.8)
+  ), url('imagenes/STAGE1.jpg'); /* Imagen de fondo */
+}
+
+/* DPF */
+.dpf-card {
+  background-image: linear-gradient(
+      rgba(8, 8, 8, 0.8),
+      rgba(8, 8, 8, 0.8)
+  ), url('imagenes/dpf.jpg'); /* Imagen de fondo */
+}
+
+/* EGR */
+.egr-card {
+  background-image: linear-gradient(
+      rgba(8, 8, 8, 0.8),
+      rgba(8, 8, 8, 0.8)
+  ), url('imagenes/egr.jpg'); /* Imagen de fondo */
+}
+
+/* Soluciones de AdBlue */
+.adblue-card {
+  background-image: linear-gradient(
+      rgba(8, 8, 8, 0.8),
+      rgba(8, 8, 8, 0.8)
+  ), url('imagenes/adblue.jpg'); /* Imagen de fondo */
+}
+
+/* Solución de error de FRM */
+.frm-card {
+  background-image: linear-gradient(
+      rgba(8, 8, 8, 0.8),
+      rgba(8, 8, 8, 0.8)
+  ), url('imagenes/frm.jpg'); /* Imagen de fondo */
+}
+
+/* Cancelación del límite de velocidad (Vmax) */
+.limit-card {
+  background-image: linear-gradient(
+      rgba(8, 8, 8, 0.8),
+      rgba(8, 8, 8, 0.8)
+  ), url('imagenes/limit.jpg'); /* Imagen de fondo */
+}
+
+/* Reparación de centralitas de Airbag */
+.airbag-card {
+  background-image: linear-gradient(
+      rgba(8, 8, 8, 0.8),
+      rgba(8, 8, 8, 0.8)
+  ), url('imagenes/airbag.jpg'); /* Imagen de fondo */
+}
+
+/* Reparación de cuadros de instrumentos */
+.speed-card {
+  background-image: linear-gradient(
+      rgba(8, 8, 8, 0.8),
+      rgba(8, 8, 8, 0.8)
+  ), url('imagenes/speed.jpg'); /* Imagen de fondo */
+}
+
+/* Diagnóstico Especializado */
+.diag-card {
+  background-image: linear-gradient(
+      rgba(8, 8, 8, 0.8),
+      rgba(8, 8, 8, 0.8)
+  ), url('imagenes/diag.jpg'); /* Imagen de fondo */
+}

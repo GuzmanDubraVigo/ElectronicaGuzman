@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Electrónica Guzmán</title>
+    <link rel="icon" type="image" href="/imagenes/icono.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Electrónica Guzmán</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio" onclick="closeMenu()">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios" onclick="closeMenu()">Servicios</a>
+                        <!-- </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros" onclick="closeMenu()">Sobre Nosotros</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto" onclick="closeMenu()">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <header id="inicio" class="bg-primary text-white text-center py-5">
+        <div class="container p-5">
+            <h1>Bienvenido a Electrónica Guzmán</h1>
+            <p>Especialistas en electrónica automotriz</p>
+        </div>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="py-5">
+        <div class="container p-5">
+            <h1 class="text-center text-white mb-4 custom-border-text">Nuestros Servicios</h1>
+            <div class="row">
+                <!-- Chip Tuning -->
+                <div class="col-md-4 mt-4">
+                    <div class="card chip-tuning-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Chip Tuning o Reprogramación</h5>
+                            <p class="card-text">
+                                El Chip Tuning aumenta el rendimiento del vehículo y
+                                proporciona ahorro de combustible.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#chipTuningModal">
+                                Más Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DPF -->
+                <div class="col-md-4 mt-4">
+                    <div class="card dpf-card">
+                        <div class="card-body">
+                            <h5 class="card-title">DPF (Filtro de partículas)</h5>
+                            <p class="card-text">
+                                Soluciones para fallas y mantenimiento del filtro de
+                                partículas diésel.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#dpfModal">
+                                Más Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EGR -->
+                <div class="col-md-4 mt-4">
+                    <div class="card egr-card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                EGR (Recirculación de Gases de Escape)
+                            </h5>
+                            <p class="card-text">
+                                Garantizar su correcto funcionamiento para evitar problemas.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#egrModal">
+                                Más Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soluciones de AdBlue -->
+                <div class="col-md-4 mt-4">
+                    <div class="card adblue-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Soluciones de AdBlue</h5>
+                            <p class="card-text">
+                                Solución definitiva a los fallos del sistema AdBlue en
+                                vehículos Euro 6.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#adblueModal">
+                                Más Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solución de error de FRM -->
+                <div class="col-md-4 mt-4">
+                    <div class="card frm-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Solución de error de FRM</h5>
+                            <p class="card-text">
+                                Reparación y reprogramación del módulo FRM en vehículos BMW y
+                                Mini Cooper.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#frmModal">
+                                Más Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cancelación del límite de velocidad (Vmax) -->
+                <div class="col-md-4 mt-4">
+                    <div class="card limit-card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Cancelación del límite de velocidad (Vmax)
+                            </h5>
+                            <p class="card-text">
+                                Eliminación del límite de velocidad en vehículos comerciales y
+                                otros.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#vmaxModal">
+                                Más Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reparación de centralitas de Airbag -->
+                <div class="col-md-4 mt-4">
+                    <div class="card airbag-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Reparación de centralitas de Airbag</h5>
+                            <p class="card-text">
+                                Reparación de unidades de Airbag y sistemas de retención SRS.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#airbagModal">
+                                Más Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reparación de cuadros de instrumentos -->
+                <div class="col-md-4 mt-4">
+                    <div class="card speed-card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Reparación de cuadros de instrumentos
+                            </h5>
+                            <p class="card-text">
+                                Reparación de velocímetros, odómetros y pantallas de
+                                instrumentos.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#instrumentosModal">
+                                Más Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diagnóstico Especializado -->
+                <div class="col-md-4 mt-4">
+                    <div class="card diag-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Diagnóstico Especializado</h5>
+                            <p class="card-text">
+                                Un diagnóstico preciso es clave para detectar y solucionar averías en un vehículo.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#diagnosticoModal">
+                                Más Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Modal para Chip Tuning -->
+    <div class="modal fade" id="chipTuningModal" tabindex="-1" aria-labelledby="chipTuningModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="chipTuningModalLabel">
+                        Chip Tuning o Reprogramación
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        El Chip Tuning o reprogramación consiste en modificar los
+                        parámetros de la unidad de control del motor (ECU) para mejorar su
+                        rendimiento. Dependiendo del nivel de modificación, se pueden
+                        aplicar diferentes etapas:
+                    </p>
+                    <h4>Stage 1</h4>
+                    <p>
+                        Es la optimización más básica, que ajusta el software de la ECU
+                        sin necesidad de cambios mecánicos. Generalmente, mejora la
+                        potencia, el torque y la eficiencia del combustible dentro de los
+                        márgenes seguros del motor.
+                    </p>
+                    <h4>Stage 2</h4>
+                    <p>
+                        Se denomina “stage 2” al proceso que conlleva, además, de la modificación de la programación de
+                        la ECU, también incluye una parte mecánica. Es decir, se realizan modificaciones en el mapa de
+                        la centralita del motor y se cambia al menos el primer tramo del escape llamado “downpipe”. La
+                        suma de ambas modificaciones da como resultado más potencia y más par motor.
+
+                        El cambio de la “downpipe” por uno menos restrictivo permite que los gases salgan más fácilmente
+                        y como consecuencia el turbo trabaja mejor.
+
+                        En el caso de querer esta segunda etapa más completa conlleva la modificación del intercooler
+                        y/o admisión.
+                    </p>
+                    <h4>Stage 3</h4>
+                    <p>
+                        La “stage 3” supone subir un nivel más. Implica el cambio de partes internas del motor con el
+                        objetivo de aumentar la capacidad del cilindro, instalando árboles de levas deportivos o
+                        turbocompresores de mayor caudal. A este nivel se le suman todas las modificaciones aplicadas en
+                        la “stage 2”. En esta etapa solemos recomendar el cambio de embrague debido al aumento de
+                        potencia y de par motor, ya que el desgaste es mayor.
+
+                        Todos estos niveles son modificados dentro de los parámetros de seguridad óptimos. Cualquier
+                        modificación realizada, ya sea únicamente reprogramación de la centralita o además, modificación
+                        de piezas mecánicas, es de manera minuciosa de forma que éstas no comprometan los límites ni la
+                        fiabilidad del vehículo.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para DPF -->
+    <div class="modal fade" id="dpfModal" tabindex="-1" aria-labelledby="dpfModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dpfModalLabel">
+                        DPF (Filtro de Partículas Diésel)
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        El filtro de partículas diésel (DPF) se utiliza para reducir las
+                        emisiones nocivas del motor diésel. Si no funciona correctamente,
+                        puede afectar el rendimiento del vehículo.
+                    </p>
+                    <h4>¿Síntomas de falla del DPF?</h4>
+                    <ul>
+                        <li>Disminución de la tracción.</li>
+                        <li>Aumento del consumo de combustible.</li>
+                        <li>Encendido de la luz de fallo en el tablero.</li>
+                        <li>Emisión de humo del escape.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para EGR -->
+    <div class="modal fade" id="egrModal" tabindex="-1" aria-labelledby="egrModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="egrModalLabel">
+                        Mantenimiento y Funcionamiento del Sistema EGR
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        El sistema EGR (Recirculación de Gases de Escape) es un componente
+                        clave en la reducción de emisiones contaminantes, ya que recircula
+                        parte de los gases de escape hacia la admisión para disminuir la
+                        formación de óxidos de nitrógeno (NOx). Para garantizar su
+                        correcto funcionamiento y evitar problemas como acumulación de
+                        carbonilla o fallos en la válvula, es recomendable realizar un
+                        mantenimiento adecuado, incluyendo limpiezas periódicas y el uso
+                        de combustibles y aceites de calidad. Mantener el sistema EGR en
+                        buen estado no solo ayuda al rendimiento del motor, sino que
+                        también permite cumplir con las normativas ambientales vigentes.
+                    </p>
+                    <h4>¿Síntomas de falla EGR?</h4>
+                    <ul>
+                        <li>Pérdida de tracción.</li>
+                        <li>Aumento del consumo de combustible.</li>
+                        <li>Encendido de la luz de fallo en el tablero.</li>
+                        <li>Humo negro del escape.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para AdBlue -->
+    <div class="modal fade" id="adblueModal" tabindex="-1" aria-labelledby="adblueModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adblueModalLabel">
+                        Solucion de AdBlue
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        En los últimos años, el uso del AdBlue se ha vuelto común en
+                        vehículos industriales y comerciales, pero muchos conductores
+                        desconocen los problemas que pueden surgir si no se cuida
+                        adecuadamente.
+                    </p>
+                    <h4>Mantenimiento del Sistema SCR</h4>
+                    <p>
+                        Si no se revisa regularmente, este líquido puede causar fallos
+                        graves. Uno de los problemas más comunes es la cristalización del
+                        AdBlue, que ocurre cuando el líquido se solidifica en el sistema
+                        SCR (Reducción Catalítica Selectiva), provocando obstrucciones y
+                        daños en los inyectores.
+                    </p>
+                    <h4>Vehículos Euro 6</h4>
+                    <p>Vehículos Euro 6 y el Sistema AdBlue</p>
+                    <ul>
+                        <li>CITROEN EURO 6</li>
+                        <li>PEUGEOT EURO 6</li>
+                        <li>FORD EURO 6</li>
+                        <li>MERCEDES EURO 6</li>
+                        <li>RENAULT EURO 6</li>
+                        <li>VOLVO EURO 6</li>
+                        <li>VOLKSWAGEN</li>
+                        <li>Y MUCHOS VEHÍCULOS MAS…</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Solución de error de FRM -->
+    <div class="modal fade" id="frmModal" tabindex="-1" aria-labelledby="frmModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="frmModalLabel">
+                        Solución de error de FRM
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        El módulo FRM (Footwell Module) es un módulo que se encuentra en
+                        los vehículos BMW y Mini Cooper. Este módulo controla el cierre
+                        centralizado, los faros, la iluminación interior, el plegado de
+                        los espejos y funciones similares.
+                    </p>
+                    <h4>
+                        ¿Qué puede pasar cuando ocurre un mal funcionamiento del FRM?
+                    </h4>
+                    <ul>
+                        <li>Las señales permanecen activadas.</li>
+                        <li>Puertas no cerradas.</li>
+                        <li>Descarga de batería.</li>
+                        <li>Luz de falla encendida.</li>
+                        <li>El sistema de vidrio no funciona.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Cancelación del límite de velocidad (Vmax) -->
+    <div class="modal fade" id="vmaxModal" tabindex="-1" aria-labelledby="vmaxModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vmaxModalLabel">
+                        Cancelación del límite de velocidad (Vmax)
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        La cancelación del límite de velocidad no es una aplicación que
+                        active el rendimiento del vehículo ni el ahorro de combustible.
+                        Simplemente elimina el límite de velocidad impuesto por el
+                        fabricante.
+                    </p>
+                    <h4>¿Es perjudicial cancelar el límite de velocidad?</h4>
+                    <p>
+                        No es perjudicial. Solo eliminamos el límite donde el vehículo
+                        está parado.
+                    </p>
+                    <h4>¿Cómo se realiza la cancelación?</h4>
+                    <p>
+                        El software del cerebro del vehículo se lee con dispositivos
+                        especiales, y se anula el límite de velocidad sin desmontar la
+                        ECU.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Reparación de centralitas de Airbag -->
+    <div class="modal fade" id="airbagModal" tabindex="-1" aria-labelledby="airbagModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="airbagModalLabel">
+                        Reparación de centralitas de Airbag
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Somos expertos en la reparación de centralitas de Airbag, unidades
+                        de Airbag y sistemas de retención SRS.
+                    </p>
+                    <h4>Averías más frecuentes:</h4>
+                    <ul>
+                        <li>Unidad bloqueada o disparada por colisión.</li>
+                        <li>Falta de tensión o picos de tensión.</li>
+                        <li>Fallo de comunicación Can Bus.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Reparación de cuadros de instrumentos -->
+    <div class="modal fade" id="instrumentosModal" tabindex="-1" aria-labelledby="instrumentosModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="instrumentosModalLabel">
+                        Reparación de cuadros de instrumentos
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Somos expertos en la reparación de cuadros de instrumentos,
+                        velocímetros y odómetros.
+                    </p>
+                    <h4>Averías más comunes:</h4>
+                    <ul>
+                        <li>
+                            Fallo de agujas (velocímetro, revoluciones, combustible,
+                            temperatura).
+                        </li>
+                        <li>Fallo del display del odómetro.</li>
+                        <li>Testigos de averías que no funcionan.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal para Diagnóstico Especializado -->
+    <div class="modal fade" id="diagnosticoModal" tabindex="-1" aria-labelledby="diagnosticoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="diagnosticoModalLabel">Servicio de Diagnóstico Especializado</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Un diagnóstico preciso es clave para detectar y solucionar averías en un vehículo de manera
+                        eficiente. Mediante el uso de equipos de diagnóstico avanzados, se pueden identificar códigos de
+                        error, analizar el rendimiento del motor y evaluar el estado de los diferentes sistemas
+                        electrónicos y mecánicos.
+                    </p>
+                    <h5>Contar con un servicio de diagnóstico especializado permite:</h5>
+                    <ul>
+                        <li>Localizar fallos en el motor, la transmisión y otros componentes.</li>
+                        <li>Prevenir averías mayores mediante la detección temprana de problemas.</li>
+                        <li>Optimizar el rendimiento del vehículo y asegurar su correcto funcionamiento.</li>
+                    </ul>
+                    <p>
+                        Un diagnóstico correcto, realizado por profesionales capacitados, garantiza reparaciones más
+                        rápidas y precisas, evitando gastos innecesarios y prolongando la vida útil del automóvil.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Contacto</h2>
+            <p>Envíanos un mensaje y te responderemos lo antes posible.</p>
+            <a href="mailto:contacto@electronica-guzman.com" class="btn btn-dark">Enviar Email</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
