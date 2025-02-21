@@ -1,5 +1,5 @@
 body {
-  padding-top: 80px; /* Ajusta este valor según sea necesario */
+  padding-top: 50px; /* Ajusta este valor según sea necesario */
   background-image: url('imagenes/FONDO.jpg');
   background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
   background-position: center; /* Centra la imagen */
@@ -72,6 +72,7 @@ button:hover {
 #inicio .container {
   position: relative; /* Asegura que el contenido esté sobre el overlay */
   z-index: 2; /* Coloca el contenido sobre el overlay */
+  font-size: 20px;
 }
 
 /* Estilo base para todas las tarjetas */
