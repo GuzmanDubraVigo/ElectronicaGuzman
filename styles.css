@@ -29,7 +29,7 @@ button:hover {
 }
 
 .custom-border-text {
-  -webkit-text-stroke: 1px rgb(62, 61, 138);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
   font-size: 48px; /* Tamaño de texto aumentado */
 }
 
