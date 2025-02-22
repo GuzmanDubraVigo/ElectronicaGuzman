@@ -29,6 +29,22 @@ function closeMenu() {
     document.body.style.paddingTop = '50px';
 }
 
+// Función para desplazarse a la sección de servicios
+function scrollToServicios() {
+    const serviciosSection = document.getElementById('servicios');
+    if (serviciosSection) {
+        serviciosSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// Escuchar el cierre de los modales y volver a la sección de servicios
+document.querySelectorAll('.modal').forEach(modal => {
+    modal.addEventListener('hidden.bs.modal', () => {
+        scrollToServicios(); // Desplazar a la sección de servicios
+        closeMenu(); // Cerrar el menú desplegable
+    });
+});
+
 // Ajustar el padding-top del body cuando el menú se expande o contrae
 const navbarToggler = document.querySelector('.navbar-toggler');
 const navbarCollapse = document.querySelector('.navbar-collapse');

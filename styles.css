@@ -75,6 +75,21 @@ button:hover {
   font-size: 20px;
 }
 
+/* Estilo para el menú desplegable */
+.navbar .dropdown-menu {
+  background-color: #343a40; /* Fondo oscuro para coincidir con el navbar */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+}
+
+.navbar .dropdown-item {
+  color: #ffffff; /* Texto blanco */
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #007bff; /* Color de fondo al pasar el mouse */
+  color: #ffffff; /* Texto blanco */
+}
+
 /* Estilo base para todas las tarjetas */
 .card {
   background-size: cover; /* Ajusta la imagen para cubrir la tarjeta */
