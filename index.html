@@ -12,41 +12,51 @@
 </head>
 
 <body>
-   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Electrónica Guzmán</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#inicio" onclick="closeMenu()">Inicio</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownServicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Servicios
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownServicios">
-                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#chipTuningModal">Chip Tuning</a></li>
-                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#dpfModal">DPF</a></li>
-                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#egrModal">EGR</a></li>
-                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#adblueModal">AdBlue</a></li>
-                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#frmModal">FRM</a></li>
-                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#vmaxModal">Vmax</a></li>
-                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#airbagModal">Airbag</a></li>
-                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#instrumentosModal">Cuadros de Instrumentos</a></li>
-                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#diagnosticoModal">Diagnóstico Especializado</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#contacto" onclick="closeMenu()">Contacto</a>
-                </li>
-            </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Electrónica Guzmán</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#inicio" onclick="closeMenu()">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownServicios"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownServicios">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#chipTuningModal">Chip Tuning</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#dpfModal">DPF</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#egrModal">EGR</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#adblueModal">AdBlue</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#frmModal">FRM</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#vmaxModal">Vmax</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#airbagModal">Airbag</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#instrumentosModal">Cuadros de Instrumentos</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#diagnosticoModal">Diagnóstico Especializado</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contacto" onclick="closeMenu()">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <!-- Sección de Inicio -->
     <header id="inicio" class="bg-primary text-white text-center py-5">
@@ -163,9 +173,7 @@
                             <h5 class="card-title">
                                 Modificacion del límite de velocidad (Vmax)
                             </h5>
-                            <p class="card-text">
-                                Modificacion del límite de velocidad en vehículos comerciales y
-                                otros.
+                            <p class="card-text">Modificacion del límite de velocidad en vehículos comerciales y otros.
                             </p>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#vmaxModal">
@@ -239,8 +247,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                     <!-- Imagen correspondiente -->
-                <img src="imagenes/STAGE1.jpg" alt="Chip Tuning" class="img-fluid mb-3">
+                    <!-- Imagen correspondiente -->
+                    <img src="imagenes/STAGE1.jpg" alt="Chip Tuning" class="img-fluid mb-3">
                     <p>
                         El Chip Tuning o reprogramación es un proceso que consiste en modificar los parámetros de la
                         unidad de control del motor (ECU) para optimizar su rendimiento. Este ajuste permite mejorar la
@@ -367,7 +375,7 @@
                 </div>
                 <div class="modal-body">
                     <!-- Imagen correspondiente -->
-                <img src="imagenes/dpf.jpg" alt="DPF" class="img-fluid mb-3">
+                    <img src="imagenes/dpf.jpg" alt="DPF" class="img-fluid mb-3">
                     <p>
                         El filtro de partículas diésel (DPF) es un componente clave en los vehículos diésel modernos,
                         diseñado para reducir las emisiones de partículas contaminantes. Captura y almacena las
@@ -436,8 +444,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                     <!-- Imagen correspondiente -->
-                <img src="imagenes/egr.jpg" alt="EGR" class="img-fluid mb-3">
+                    <!-- Imagen correspondiente -->
+                    <img src="imagenes/egr.jpg" alt="EGR" class="img-fluid mb-3">
                     <p>
                         El sistema EGR (Recirculación de Gases de Escape) es un componente esencial en los motores
                         modernos, diseñado para reducir las emisiones de óxidos de nitrógeno (NOx). Este sistema
@@ -514,7 +522,7 @@
                 </div>
                 <div class="modal-body">
                     <!-- Imagen correspondiente -->
-                <img src="imagenes/adblue.jpg" alt="AdBlue" class="img-fluid mb-3">
+                    <img src="imagenes/adblue.jpg" alt="AdBlue" class="img-fluid mb-3">
                     <p>
                         El AdBlue es un líquido compuesto por urea y agua desmineralizada, utilizado en los vehículos
                         diésel modernos para reducir las emisiones de óxidos de nitrógeno (NOx) a través del sistema SCR
@@ -604,7 +612,7 @@
                 </div>
                 <div class="modal-body">
                     <!-- Imagen correspondiente -->
-                <img src="imagenes/frm.jpg" alt="FRM" class="img-fluid mb-3">
+                    <img src="imagenes/frm.jpg" alt="FRM" class="img-fluid mb-3">
                     <p>
                         El módulo FRM (Footwell Module) es un componente electrónico clave en los vehículos BMW y Mini
                         Cooper. Este módulo controla una variedad de funciones importantes, como el cierre centralizado,
@@ -693,7 +701,7 @@
                 </div>
                 <div class="modal-body">
                     <!-- Imagen correspondiente -->
-                <img src="imagenes/limit.jpg" alt="Cancelación de límite de velocidad" class="img-fluid mb-3">
+                    <img src="imagenes/limit.jpg" alt="Cancelación de límite de velocidad" class="img-fluid mb-3">
                     <p>
                         La modificacion del límite de velocidad no es una aplicación que
                         active el rendimiento del vehículo ni el ahorro de combustible.
@@ -733,7 +741,7 @@
                 </div>
                 <div class="modal-body">
                     <!-- Imagen correspondiente -->
-                <img src="imagenes/airbag.jpg" alt="Reparación de Airbag" class="img-fluid mb-3">
+                    <img src="imagenes/airbag.jpg" alt="Reparación de Airbag" class="img-fluid mb-3">
                     <p>
                         Somos expertos en la reparación de centralitas de Airbag, unidades
                         de Airbag y sistemas de retención SRS.
@@ -783,7 +791,7 @@
                 </div>
                 <div class="modal-body">
                     <!-- Imagen correspondiente -->
-                <img src="imagenes/speed.jpg" alt="Reparación de cuadros de instrumentos" class="img-fluid mb-3">
+                    <img src="imagenes/speed.jpg" alt="Reparación de cuadros de instrumentos" class="img-fluid mb-3">
                     <p>
                         Somos especialistas en la reparación de cuadros de instrumentos, velocímetros, odómetros y
                         sistemas de visualización. Nuestro equipo cuenta con la experiencia y tecnología necesaria para
@@ -847,7 +855,7 @@
                 </div>
                 <div class="modal-body">
                     <!-- Imagen correspondiente -->
-                <img src="imagenes/diag.jpg" alt="Diagnóstico Especializado" class="img-fluid mb-3">
+                    <img src="imagenes/diag.jpg" alt="Diagnóstico Especializado" class="img-fluid mb-3">
                     <p>
                         En Electrónica Guzmán, ofrecemos un servicio de diagnóstico especializado que utiliza tecnología
                         de vanguardia para identificar y solucionar problemas en su vehículo de manera rápida y precisa.
@@ -923,10 +931,10 @@
             <a href="mailto:contacto@electronica-guzman.com" class="btn btn-dark">Enviar Email</a>
         </div>
     </section>
-<!-- Botón de scroll hacia arriba -->
-<button id="scrollToTopBtn" class="scroll-to-top" title="Volver arriba">
-    ↑
-</button>
+    <!-- Botón de scroll hacia arriba -->
+    <button id="scrollToTopBtn" class="scroll-to-top" title="Volver arriba">
+        ↑
+    </button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 
