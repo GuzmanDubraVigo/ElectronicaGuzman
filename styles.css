@@ -47,7 +47,7 @@ button:hover {
 
 /* Estilo para la sección de inicio */
 #inicio {
-  background-image: url('imagenes/ELECTRONICA AUTOMOTRIZ.png'); /* Imagen de fondo */
+  background-image: url('ea.png'); /* Imagen de fondo */
   background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
