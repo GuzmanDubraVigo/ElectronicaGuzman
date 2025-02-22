@@ -81,7 +81,7 @@ button:hover {
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   color: #ffffff; /* Color del texto claro para contrastar con el fondo oscuro */
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+  border: 1px solid rgb(255, 255, 255); /* Borde sutil */
   position: relative; /* Necesario para posicionar el fondo */
   overflow: hidden; /* Evita que el fondo se desborde */
   padding: 20px; /* Espaciado interno */
@@ -106,7 +106,7 @@ button:hover {
   background-color: #007bff; /* Color de fondo del botón */
   border: none; /* Sin borde */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
-  color: white; /* Color del texto del botón */
+  color: rgb(255, 255, 255); /* Color del texto del botón */
 }
 
 /* Estilos específicos para cada tarjeta */
