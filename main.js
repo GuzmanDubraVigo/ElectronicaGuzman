@@ -40,7 +40,7 @@ function scrollToServicios() {
 // Escuchar el cierre de los modales y volver a la sección de servicios
 document.querySelectorAll('.modal').forEach(modal => {
     modal.addEventListener('hidden.bs.modal', () => {
-        scrollToServicios(); // Desplazar a la sección de servicios
+        // scrollToServicios(); // Desplazar a la sección de servicios
         closeMenu(); // Cerrar el menú desplegable
     });
 });
@@ -68,4 +68,24 @@ window.addEventListener('resize', () => {
         // En pantallas grandes, restaura el padding-top inicial
         body.style.paddingTop = '50px';
     }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Mostrar u ocultar el botón de scroll según la posición de la página
+    window.addEventListener('scroll', () => {
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        if (window.scrollY > 200) {
+            scrollToTopBtn.style.display = 'block';
+        } else {
+            scrollToTopBtn.style.display = 'none';
+        }
+    });
+
+    // Desplazarse hacia arriba al hacer clic en el botón
+    document.getElementById('scrollToTopBtn').addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 });
